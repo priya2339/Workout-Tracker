@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  /* background-color: #eaddbc; */
+  background-image: url('https://media.istockphoto.com/id/1398323376/vector/rainbow-colors-gradient-defocused-blurred-motion-abstract-background-vector.jpg?s=612x612&w=0&k=20&c=CTp_f8JNejW3r9e-TQZwf-DEi2ulTJM0W_GDJz1FBAg=');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(5, 17, 28, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#duration, #type , #caloriesBurned{
+  background-color: #f3ebeb;
+  border: 2px solid #ccc;
+  font-size: 20px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.history-section {
+  margin-top: 30px;
+}
+
+.history-section h2 {
+  text-align: center;
+}
+
+.history-list {
+  padding: 0;
+}
+
+.workout-item {
+  padding: 10px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgb(114, 225, 188);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border:1px solid #c25959;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(5, 17, 28, 0.5);
+}
+
+.workout-item:hover{
+  background-color: rgb(44, 196, 145);
+}
+
+.workout-item strong {
+  font-weight: bold;
+}
+
+.workout-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.workout-item button:hover {
+  background-color: #c82333;
+}
+
+.calories-section {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.total-calories {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, 320px and up) */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input, .form-group select {
+    padding: 8px;
+  }
+
+  .submit-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .workout-item {
+    padding: 8px;
+  }
+
+  .total-calories {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .form-group input, .form-group select {
+    padding: 9px;
+  }
+
+  .submit-btn {
+    padding: 9px;
+    font-size: 15px;
+  }
+
+  .workout-item {
+    padding: 9px;
+  }
+
+  .total-calories {
+    font-size: 22px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .container {
+    max-width: 85%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .form-group input, .form-group select {
+    padding: 10px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .workout-item {
+    padding: 10px;
+  }
+
+  .total-calories {
+    font-size: 24px;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 75%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
